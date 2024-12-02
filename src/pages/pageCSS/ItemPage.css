@@ -1,0 +1,71 @@
+.item-page {
+    max-width: 800px;
+    margin: 50px auto; /* Центрує сторінку */
+    padding: 20px;
+    background-color: #f9f9f9; /* Світлий фон */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тінь для стилю */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .item-page img {
+    width: 100%; /* Зображення займає всю ширину */
+    max-height: 400px;
+    object-fit: cover; /* Обрізання зображення для правильного масштабу */
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .item-page h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .item-page p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .item-page ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .item-page li {
+    font-size: 16px;
+    color: #444;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .item-page li::before {
+    content: '•'; /* Додає символ перед кожним елементом */
+    color: #007bff; /* Синій колір для символу */
+    margin-right: 10px;
+    font-size: 20px;
+  }
+  
+  .back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+  }
+  
+  .back-button:hover {
+    background-color: #0056b3;
+  }
+  
