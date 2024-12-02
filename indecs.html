@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helicopter Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My Helicopter Zoo</h1>
+            <nav>
+                <a href="#" id="my-helicopters">My Helicopters</a>
+                <a href="#" id="create-helicopter">Create Helicopter</a>
+            </nav>
+            <input type="text" id="search-input" placeholder="Search helicopters...">
+            <button onclick="handleSearch()">Search</button>
+            <button onclick="clearSearch()">Clear</button>
+        </header>
+
+        <!-- Helicopter List -->
+        <section id="helicopter-list-section">
+            <div class="controls">
+                <label>
+                    Sort by:
+                    <select id="sort-options" onchange="handleSortChange()">
+                        <option value="name">Name (A-Z)</option>
+                        <option value="expense">Most Expensive</option>
+                        <option value="passengers">Passenger Capacity</option>
+                        <option value="maxSpeed">Max Speed</option>
+                    </select>
+                </label>
+                <div>
+                    Count total daily expenses: 
+                    <button onclick="countTotalExpenses()">Count</button>
+                    <p>Total expenses: <span id="total-expenses">$0</span></p>
+                </div>
+            </div>
+            <div id="helicopters-container" class="helicopters-container"></div>
+        </section>
+
+        <!-- Create Helicopter Form -->
+        <section id="create-helicopter-section" style="display:none;">
+            <h2>Create Helicopter</h2>
+            <form id="helicopter-form">
+                <input type="text" id="helicopter-name" placeholder="Name" required>
+                <textarea id="helicopter-description" placeholder="Description"></textarea>
+                <input type="number" id="helicopter-passengers" placeholder="Passenger Capacity" required>
+                <input type="number" id="helicopter-max-speed" placeholder="Max Speed (km/h)" required>
+                <input type="number" id="helicopter-expense" placeholder="Daily expense ($)" required>
+                <select id="helicopter-type">
+                    <option value="Military">Military</option>
+                    <option value="Commercial">Commercial</option>
+                    <option value="Rescue">Rescue</option>
+                </select>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
