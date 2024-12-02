@@ -1,0 +1,210 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+.helicopters-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.helicopter-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    margin: 10px;
+    width: 230px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.helicopter-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+
+button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+/* -------Стилі для вікна редагування------- */
+
+#edit-form {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 400px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.15);
+}
+
+#edit-form h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#edit-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+    font-weight: bold;
+}
+
+#edit-form input[type="text"],
+#edit-form input[type="number"],
+#edit-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+#edit-form textarea {
+    resize: vertical;
+}
+
+#edit-form button {
+    width: 48%;
+    padding: 10px;
+    font-size: 1em;
+    margin-top: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#edit-form button:first-child {
+    background-color: #4CAF50 ;
+    color: white;
+    margin-right: 4%;
+}
+
+#edit-form button:last-child {
+    background-color: #f44336;
+    color: white;
+}
+
+#edit-form button:hover {
+    opacity: 0.9;
+}
+
+/*--------Стилі для вікна додавання------*/
+
+/* Стилі для форми додавання вертольота */
+#create-form, #edit-form {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 400px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.15);
+}
+
+#create-form h2, #edit-form h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#create-form label, #edit-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+    font-weight: bold;
+}
+
+#create-form input[type="text"],
+#create-form input[type="number"],
+#create-form input[type="file"],
+#create-form textarea,
+#edit-form input[type="text"],
+#edit-form input[type="number"],
+#edit-form input[type="file"],
+#edit-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+#create-form textarea,
+#edit-form textarea {
+    resize: vertical;
+}
+
+#create-form button,
+#edit-form button {
+    width: 48%;
+    padding: 10px;
+    font-size: 1em;
+    margin-top: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#create-form button:first-child,
+#edit-form button:first-child {
+    background-color: #4CAF50;
+    color: white;
+    margin-right: 4%;
+}
+
+#create-form button:last-child,
+#edit-form button:last-child {
+    background-color: #f44336;
+    color: white;
+}
+
+#create-form button:hover,
+#edit-form button:hover {
+    opacity: 0.9;
+}
