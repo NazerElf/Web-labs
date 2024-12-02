@@ -1,0 +1,27 @@
+.main-content {
+  padding: 20px;
+}
+
+.helicopter-list {
+  display: flex;
+  flex-wrap: wrap; /* Дозволяє переносити елементи на новий рядок */
+  justify-content: center; /* Вирівнює елементи по центру */
+  gap: 20px; /* Відступи між елементами */
+}
+
+.helicopter-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  width: 300px; /* Фіксована ширина картки */
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.helicopter-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}

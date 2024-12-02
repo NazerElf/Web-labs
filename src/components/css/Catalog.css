@@ -1,0 +1,26 @@
+.catalog {
+  padding: 20px;
+}
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.helicopter-card {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.helicopter-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}

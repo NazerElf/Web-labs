@@ -1,0 +1,68 @@
+.helicopter-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.helicopter-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.helicopter-card h3 {
+  margin: 10px 0;
+}
+
+.helicopter-card p {
+  margin: 5px 0;
+}
+.helicopter-card {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.helicopter-card:hover {
+  transform: scale(1.05); /* Ефект при наведенні */
+}
+
+.helicopter-card img {
+  max-width: 100%;
+  height: 200px;
+  object-fit: cover; /* Забезпечує правильне обрізання зображення */
+  border-radius: 5px;
+}
+
+.helicopter-card ul {
+  list-style: none; /* Забирає крапки зі списків */
+  padding: 0;
+  margin: 10px 0;
+}
+
+.helicopter-card li {
+  text-align: left; /* Робить текст рівним по лівому краю */
+  font-size: 14px;
+  color: #333;
+}
+
+.helicopter-card h3 {
+  font-size: 20px;
+  margin: 10px 0;
+  color: #222;
+}
+
+.helicopter-card p {
+  font-size: 14px;
+  color: #555;
+}
